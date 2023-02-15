@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ExtraText"
+    tools:context=".ManageCostumer">
+
+
+    //Header
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#0024FF"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Flora National Highschool"
+            android:textColor="#FFD000"
+            android:textSize="32dp" />
+
+    </LinearLayout>
+
+
+    //Body
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="992dp"
+        android:background="#FDD835"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/idNumber_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter ID Number"/>
+
+        <TextView
+            android:id="@+id/currentBalance_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/searchId_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search ID" />
+
+        <EditText
+            android:id="@+id/cashInAmount_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Cash In Amount"
+            android:inputType="numberSigned"/>
+
+        <Button
+            android:id="@+id/cashIn_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash In" />
+    </LinearLayout>
+
+
+</LinearLayout>

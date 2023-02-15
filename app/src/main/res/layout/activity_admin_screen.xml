@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB300"
+    android:orientation="vertical"
+    tools:context=".AdminScreen"
+    tools:ignore="ExtraText">>
+    <!--Header-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:srcCompat="@drawable/_28784953_519302796744146_4974038464180024120_n" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="30"
+            android:background="@color/teal_200"
+            android:text="FLORA NATIONAL HIGH SCHOOL"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!--Body-->
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="#FFF176"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Order_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Order"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/Inventory_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Inventory"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/Menu_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Menu"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/Report_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Report"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/User_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="User"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/Customer_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Customer"
+                    app:backgroundTint="#F44336" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/ViewOrder_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="View Orders"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/ManageOrder_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Manage Orders"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/ViewInventory_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="View Inventory"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/UpdateInventory_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Update Inventory"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/AddProduct_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Add Product"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/EditMenu_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Edit Menu"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/RemoveProduct_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Remove Product "
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/GenerateReportSale_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Generate Report Sales"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/GenerateReportInventory_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Generate Report on Inventory"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/GenerateReportCustomer_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Generate Report on Customers"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/AddUser_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Add User"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/EditUser_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Edit User"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/RemoveUser_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Remove User"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/ViewCustomer_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="View Customer"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+
+                <Button
+                    android:id="@+id/ManageCustomer_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30px"
+                    android:background="#F44336"
+                    android:backgroundTint="#86C8BC"
+                    android:text="Manage Customer"
+                    android:visibility="gone"
+                    app:backgroundTint="#F44336" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

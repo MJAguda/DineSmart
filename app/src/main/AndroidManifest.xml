@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DineSmart"
+        tools:targetApi="31">
+        <activity
+            android:name=".ManageCostumer"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCostumer"
+            android:exported="false" />
+        <activity
+            android:name=".RemoveUser"
+            android:exported="false" />
+        <activity
+            android:name=".EditUser"
+            android:exported="false" />
+        <activity
+            android:name=".AddUser"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReportOnCostumers"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReportInventory"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateReportSale"
+            android:exported="false" />
+        <activity
+            android:name=".EditProduct"
+            android:exported="false" />
+        <activity
+            android:name=".AddProduct"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInventory"
+            android:exported="false" />
+        <activity
+            android:name=".ViewInventory"
+            android:exported="false" />
+        <activity
+            android:name=".UserScreen"
+            android:exported="false" />
+        <activity
+            android:name=".arty"
+            android:exported="false" />
+        <activity
+            android:name=".View_Order"
+            android:exported="false" />
+        <activity
+            android:name=".View_or_Manage"
+            android:exported="false" />
+        <activity
+            android:name=".AdminScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SignInScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SignInOrSignOut"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
